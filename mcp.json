@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "prompthaus-talent": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./mcp/server.mjs"],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {
+        "PROMPTHAUS_API_BASE": "https://prompthausapp.com"
+      }
+    }
+  }
+}

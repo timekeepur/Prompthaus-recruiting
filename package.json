@@ -1,0 +1,17 @@
+{
+  "name": "prompthaus-recruiting-plugin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild mcp/server.ts --bundle --platform=node --format=esm --outfile=mcp/server.mjs",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0"
+  }
+}
