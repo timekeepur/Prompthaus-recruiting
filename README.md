@@ -3,9 +3,11 @@
 [![Agent Plugins](https://img.shields.io/badge/Agent%20Plugins-1.0.0-blue)](https://agent-plugins.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+[![Add MCP to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=prompthaus-talent&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImdpdGh1Yjp0aW1la2VlcHVyL1Byb21wdGhhdXMtcmVjcnVpdGluZyJdLCJlbnYiOnsiUFJPTVBUSEFVU19BUElfQkFTRSI6Imh0dHBzOi8vcHJvbXB0aGF1c2FwcC5jb20ifX0%3D)
+
 Portable [Agent Plugins](https://agent-plugins.org) package for verified talent search over Prompthaus Skills Wallets.
 
-**Search quiz-backed candidates across 16+ career pathways** — ranked by North Star fit, literacy credentials, and career evidence. Returns recruiter links, not resume keyword gaming.
+Measurable AI skills pay up to 62% more when people can prove them (PwC 2026 Global AI Jobs Barometer). **Search quiz-backed Skills Wallets across 16+ career pathways**, ranked by North Star fit, literacy credentials, and career evidence. Every match includes a recruiter link for human review.
 
 ## Pathway coverage
 
@@ -22,11 +24,19 @@ Full pathway list: [prompthausapp.com/pathways](https://prompthausapp.com/pathwa
 
 ## Install in Cursor
 
+### One-click MCP (tools only)
+
+Click **Add MCP to Cursor** above. Cursor installs `talent_search` and `profile_get` via `npx` from this repo. No API keys required for light use.
+
+Requires [Cursor](https://cursor.com/) installed. If the button does nothing, open Cursor once so the URL handler registers, then retry.
+
+### Full Agent Plugin (tools + skills)
+
 1. Clone this repo or install from the [Cursor Marketplace](https://cursor.com/marketplace) (search **Prompthaus**).
 2. In Cursor: **Customize** → **Add Agent Plugin** → select this directory.
 3. Optional: set `PROMPTHAUS_API_KEY` in plugin env for higher rate limits.
 
-No `npm install` required — the MCP server ships as a bundled `mcp/server.mjs`.
+No `npm install` required. The MCP server ships as a bundled `mcp/server.mjs`.
 
 ## Ask naturally
 
@@ -62,7 +72,7 @@ The agent calls `talent_search`, then `profile_get` for top slugs, and returns `
 
 ## ChatGPT users
 
-This plugin targets Agent Plugins clients (Cursor, VS Code, Copilot, etc.). For ChatGPT, use a **Custom GPT with Actions** — see [talent.md](https://prompthausapp.com/talent.md#chatgpt-custom-gpt-setup).
+This plugin targets Agent Plugins clients (Cursor, VS Code, Copilot, etc.). For ChatGPT, use a **Custom GPT with Actions**. See [talent.md](https://prompthausapp.com/talent.md#chatgpt-custom-gpt-setup).
 
 ## Develop
 
@@ -80,4 +90,4 @@ npm run build   # bundles mcp/server.mjs
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

@@ -2,8 +2,11 @@
   "name": "prompthaus-recruiting-plugin",
   "private": true,
   "type": "module",
+  "bin": {
+    "prompthaus-recruiting-mcp": "./mcp/server.mjs"
+  },
   "scripts": {
-    "build": "esbuild mcp/server.ts --bundle --platform=node --format=esm --outfile=mcp/server.mjs",
+    "build": "esbuild mcp/server.ts --bundle --platform=node --format=esm --outfile=mcp/server.mjs --banner:js='#!/usr/bin/env node'",
     "prepare": "npm run build"
   },
   "dependencies": {

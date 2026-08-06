@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "prompthaus-recruiting",
   "version": "1.0.0",
-  "description": "Search quiz-backed Skills Wallets across 16+ career pathways. Ranked by North Star fit, literacy credentials, and career evidence — with recruiter links, not resume keyword gaming.",
+  "description": "Search quiz-backed Skills Wallets across 16+ career pathways. Ranked by North Star fit, literacy credentials, and career evidence. Recruiter links for human review on every match.",
   "license": "MIT",
   "homepage": "https://prompthausapp.com/for-recruiters",
   "repository": "https://github.com/timekeepur/Prompthaus-recruiting",
