@@ -7,7 +7,15 @@
 
 Portable [Agent Plugins](https://agent-plugins.org) package for verified talent search over Prompthaus Skills Wallets.
 
-Measurable AI skills pay up to 62% more when people can prove them (PwC 2026 Global AI Jobs Barometer). **Search quiz-backed Skills Wallets across 16+ career pathways**, ranked by North Star fit, literacy credentials, and career evidence. Every match includes a recruiter link for human review.
+Measurable AI skills pay up to 62% more when people can prove them (PwC 2026 Global AI Jobs Barometer). **Search quiz-backed Skills Wallets across 16+ career pathways**, ranked by North Star fit, **pathway completions**, literacy credentials, career evidence, and projects. Every match includes a recruiter link for human review.
+
+## Skills
+
+| Skill | When |
+|-------|------|
+| `role-scoping` | Before search — stack-rank skills and characteristic questions |
+| `talent-search` | After scoping — search + top profile pulls |
+| `recruiter-fit` | Fit report for a role |
 
 ## Pathway coverage
 
@@ -34,7 +42,10 @@ Requires [Cursor](https://cursor.com/) installed. If the button does nothing, op
 
 1. Clone this repo or install from the [Cursor Marketplace](https://cursor.com/marketplace) (search **Prompthaus**).
 2. In Cursor: **Customize** → **Add Agent Plugin** → select this directory.
-3. Optional: set `PROMPTHAUS_API_KEY` in plugin env for higher rate limits.
+3. Optional: set `PROMPTHAUS_API_KEY` in plugin env for **identified** tier (higher rate limits + full fitSummary). Invalid keys return `401` — they are not silently treated as anonymous.
+4. Partner keys (issued by Prompthaus) unlock the highest limits and completion statement details on `profile_get`.
+
+Dictionary / learn term pages stay public and are not part of this MCP.
 
 No `npm install` required. The MCP server ships as a bundled `mcp/server.mjs`.
 
@@ -68,7 +79,7 @@ The agent calls `talent_search`, then `profile_get` for top slugs, and returns `
 | Variable | Required | Default |
 |----------|----------|---------|
 | `PROMPTHAUS_API_BASE` | No | `https://prompthausapp.com` |
-| `PROMPTHAUS_API_KEY` | No | Client-managed; higher rate limits |
+| `PROMPTHAUS_API_KEY` | No | Per-integrator or legacy shared key; identified/partner tiers |
 
 ## ChatGPT users
 
