@@ -27,6 +27,7 @@ Natural-language search resolves roles across Prompthaus career pathways, includ
 | Product & GTM | Product Manager, GTM Growth Engineer, GTM Strategy & Operations |
 | Industry & ops | Automotive Software Engineer, Defense Manufacturing Technician, Energy Operations Engineer |
 | Finance & markets | Finance Analyst, Market Operations Analyst, Trade Surveillance Analyst |
+| Life sciences | Computational Genomics Scientist, Biomedical AI Engineer |
 
 Full pathway list: [prompthausapp.com/pathways](https://prompthausapp.com/pathways)
 
@@ -64,6 +65,8 @@ Example queries:
 - trade surveillance analyst
 - energy operations engineer
 - GTM growth engineer
+- biomedical AI engineer
+- computational genomics scientist
 
 The agent calls `talent_search`, then `profile_get` for top slugs, and returns `recruiterUrl` + `fitSummary`.
 

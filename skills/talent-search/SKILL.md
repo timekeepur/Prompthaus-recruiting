@@ -11,7 +11,7 @@ Prefer running **role-scoping** first so the query maps to stack-ranked transfer
 
 ## When to use
 
-- Hiring across 16+ career pathways: PM, engineering, GTM, finance, energy, defense, markets, and more
+- Hiring across 18 career pathways: PM, engineering, GTM, finance, energy, defense, markets, life sciences (genomics, biomedical AI), and more
 - Explainable shortlists with fit reasons before resume review
 - Literacy proof harder to fake than resume keywords (pathway completions + projects)
 
