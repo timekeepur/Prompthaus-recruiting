@@ -31088,7 +31088,7 @@ var server = new McpServer({
 });
 server.tool(
   "talent_search",
-  "Search Prompthaus verified public talent by role or pathway across 16+ career pathways (PM, engineering, GTM, finance, energy, defense, markets, and more). Returns ranked slugs with recruiterUrl and fitSummary. Never invent slugs; only use slugs from this response.",
+  "Search Prompthaus verified public talent by role or pathway across 18 career pathways (PM, engineering, GTM, finance, energy, defense, markets, life sciences / genomics / biomedical AI, and more). Returns ranked slugs with recruiterUrl and fitSummary. Never invent slugs; only use slugs from this response.",
   {
     q: external_exports.string().min(1).describe(
       "Role need from job description (e.g. founding PM, forward deployed engineer, trade surveillance analyst, energy operations)"
